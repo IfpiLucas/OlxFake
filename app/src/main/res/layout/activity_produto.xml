@@ -6,4 +6,74 @@
     android:layout_height="match_parent"
     tools:context=".ProdutoActivity">
 
+    <ImageView
+        android:id="@+id/img_produto"
+        android:layout_width="413dp"
+        android:layout_height="223dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ponto_de_exclamacao" />
+
+    <TextView
+        android:id="@+id/txt_titulo_produto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="200dp"
+        android:text="Titulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_produto" />
+
+    <TextView
+        android:id="@+id/txt_valor_produto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="179dp"
+        android:text="R$ 00.00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_titulo_produto" />
+
+    <TextView
+        android:id="@+id/txt_descricao_produto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="174dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="175dp"
+        android:text="Descricao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_valor_produto" />
+
+    <Button
+        android:id="@+id/btn_ligar"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FF7700"
+        android:onClick="ligar"
+        android:text="Ligar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_marginEnd="76dp"
+        android:backgroundTint="#FF8400"
+        android:onClick="chat"
+        android:text="Chat"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_ligar"
+        app:layout_constraintEnd_toEndOf="parent" />
 </android.support.constraint.ConstraintLayout>
