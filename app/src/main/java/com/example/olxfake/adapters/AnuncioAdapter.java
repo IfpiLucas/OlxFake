@@ -17,6 +17,11 @@ public class AnuncioAdapter extends RecyclerView.Adapter<AnuncioAdapter.AnuncioV
     List<Anuncio> anuncios;
     Context context;
 
+    public AnuncioAdapter(List<Anuncio> anuncios, Context context) {
+        this.anuncios = anuncios;
+        this.context = context;
+    }
+
     @NonNull
     @Override
     public AnuncioViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
