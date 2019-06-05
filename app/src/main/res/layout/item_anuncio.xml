@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="135dp"
     android:layout_margin="5dp"
-    android:background="#E0E0E0"
+    android:background="#ffffffff"
     android:gravity="center">
 
     <ImageView
@@ -26,23 +26,25 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:fontFamily="sans-serif-condensed-medium"
+            android:fontFamily="monospace"
             android:text="Titulo"
-            android:textSize="28sp" />
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/txt_valor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="R$" />
+            android:fontFamily="sans-serif-black"
+            android:text="R$"
+            android:textSize="28dp" />
 
         <TextView
-            android:id="@+id/txt_data_cidade"
+            android:id="@+id/txt_data"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="02/02/2019, Cidade" />
+            android:text="02 mes 00:00, Bairro" />
     </LinearLayout>
 
 </LinearLayout>

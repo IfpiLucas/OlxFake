@@ -9,15 +9,21 @@ import android.widget.TextView;
 
 public class ProdutoActivity extends AppCompatActivity {
     private String tel = "5586988890909";
-    TextView titulo, cidade, valor;
-
+    TextView txtTitulo, txtCidade, txtValor, txtDescricao;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_produto);
-        Intent intent = new Intent();
-        intent.getExtras();
+        Intent intent = getIntent();
+        txtTitulo = findViewById(R.id.txt_titulo_produto);
+        txtCidade = findViewById(R.id.txt_data_hora_publicacao);
+        txtValor = findViewById(R.id.txt_valor_produto);
+        txtDescricao = findViewById(R.id.txt_descricao_produto);
+        txtDescricao.setText(intent.getStringExtra("Descricao"));
+        txtTitulo.setText(intent.getStringExtra("Titulo"));
+        txtCidade.setText(intent.getStringExtra("Data")+", "+intent.getStringExtra("Cidade"));
+        txtValor.setText(intent.getStringExtra("Valor"));
     }
 
     public void ligar(View view){

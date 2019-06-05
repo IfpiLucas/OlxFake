@@ -10,18 +10,20 @@ public class Anuncio {
     private double valor;
     private String data;
 
-    public Anuncio(String titulo, String descricao, String cidade, double valor) {
+    public Anuncio(String titulo, String descricao, String cidade, double valor, String data) {
         this.titulo = titulo;
         this.descricao = descricao;
         this.cidade = cidade;
         this.valor = valor;
-
+        this.data = data;
     }
 
     public static List<Anuncio> getAnuncios(){
         List<Anuncio> anuncios = new ArrayList<>();
-        anuncios.add(new Anuncio("Xiaomi","Produto novo", "Piaui", 988.25));
-        anuncios.add(new Anuncio("Mesa","Produto Zerado", "Santa maria", 132.90));
+        anuncios.add(new Anuncio("Xiaomi","Produto novo na caixa", "Parque Piaui", 988.25, "28 Jun"));
+        anuncios.add(new Anuncio("Mesa","Mesa seme nova", "Santa maria", 132.90, "24 Mai"));
+        anuncios.add(new Anuncio("Joestick","Joestick", "Picos", 132.90, "24 Out"));
+        anuncios.add(new Anuncio("Bike","Bancada seme nova", "Sao Cristovao", 132.90, "24 Set"));
         return anuncios;
     }
 

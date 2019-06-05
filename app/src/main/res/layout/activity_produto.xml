@@ -18,41 +18,48 @@
 
     <TextView
         android:id="@+id/txt_titulo_produto"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="176dp"
-        android:layout_marginTop="76dp"
-        android:layout_marginEnd="200dp"
+        android:layout_width="380dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="left"
+        android:paddingLeft="8sp"
         android:text="Titulo"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_valor_produto" />
+
+    <TextView
+        android:id="@+id/txt_valor_produto"
+        android:layout_width="267dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="128dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="left"
+        android:text="R$ 00.00"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_produto" />
 
     <TextView
-        android:id="@+id/txt_valor_produto"
+        android:id="@+id/txt_data_hora_publicacao"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="176dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="179dp"
-        android:text="R$ 00.00"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="left"
+        android:text="Publicado em 20/12 as 16:17"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_titulo_produto" />
-
-    <TextView
-        android:id="@+id/txt_descricao_produto"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="174dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="175dp"
-        android:text="Descricao"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_valor_produto" />
 
     <Button
         android:id="@+id/btn_ligar"
@@ -76,4 +83,39 @@
         android:text="Chat"
         app:layout_constraintBaseline_toBaselineOf="@+id/btn_ligar"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="161dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="234dp"
+        android:fontFamily="@font/allerta"
+        android:text="Descricao"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_data_hora_publicacao" />
+
+    <TextView
+        android:id="@+id/txt_descricao_produto"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif-black"
+        android:padding="6sp"
+        android:text="Blablabla"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_ligar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.588" />
+
 </android.support.constraint.ConstraintLayout>
