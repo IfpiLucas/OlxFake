@@ -40,8 +40,7 @@ public class AnuncioAdapter extends RecyclerView.Adapter<AnuncioAdapter.AnuncioV
         anuncioViewHolder.txtTitulo.setText(anuncio.getTitulo());
         anuncioViewHolder.txtCidade.setText(anuncio.getCidade());
         anuncioViewHolder.txtValor.setText("R$" + anuncio.getValor());
-        anuncioViewHolder.txtData.setText(anuncio.getData());
-        anuncioViewHolder.txtDescricao.setText(anuncio.getDescricao());
+
     }
 
     @Override
@@ -50,24 +49,25 @@ public class AnuncioAdapter extends RecyclerView.Adapter<AnuncioAdapter.AnuncioV
     }
 
     class AnuncioViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        TextView txtTitulo, txtCidade, txtValor, txtDescricao, txtData;
+        TextView txtTitulo, txtCidade, txtValor;
 
         public AnuncioViewHolder(@NonNull View itemView) {
             super(itemView);
             this.txtTitulo = itemView.findViewById(R.id.txt_titulo);
             this.txtCidade = itemView.findViewById(R.id.txt_data);
             this.txtValor = itemView.findViewById(R.id.txt_valor);
-            this.txtData = itemView.findViewById(R.id.txt_data);
+
+            itemView.setOnClickListener(this);
         }
 
         @Override
         public void onClick(View v) {
+
             Intent intent = new Intent(context, ProdutoActivity.class);
             intent.putExtra("Titulo", txtTitulo.getText().toString());
             intent.putExtra("Cidade", txtCidade.getText().toString());
             intent.putExtra("Valor", txtValor.getText());
             intent.putExtra("Descricao", txtValor.getText().toString());
-            intent.putExtra("Data", txtData.getText().toString());
             context.startActivity(intent);
         }
     }

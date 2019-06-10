@@ -24,6 +24,10 @@ public class Anuncio {
         anuncios.add(new Anuncio("Mesa","Mesa seme nova", "Santa maria", 132.90, "24 Mai"));
         anuncios.add(new Anuncio("Joestick","Joestick", "Picos", 132.90, "24 Out"));
         anuncios.add(new Anuncio("Bike","Bancada seme nova", "Sao Cristovao", 132.90, "24 Set"));
+        anuncios.add(new Anuncio("Bike","Bancada seme nova", "Sao Cristovao", 132.90, "24 Set"));
+        anuncios.add(new Anuncio("Bike","Bancada seme nova", "Sao Cristovao", 132.90, "24 Set"));
+        anuncios.add(new Anuncio("Bike","Bancada seme nova", "Sao Cristovao", 132.90, "24 Set"));
+        anuncios.add(new Anuncio("Bike","Bancada seme nova", "Sao Cristovao", 132.90, "24 Set"));
         return anuncios;
     }
 
