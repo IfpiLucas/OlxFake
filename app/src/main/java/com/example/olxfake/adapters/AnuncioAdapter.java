@@ -62,12 +62,12 @@ public class AnuncioAdapter extends RecyclerView.Adapter<AnuncioAdapter.AnuncioV
 
         @Override
         public void onClick(View v) {
-
+            Anuncio anun = anuncios.get(getAdapterPosition());
             Intent intent = new Intent(context, ProdutoActivity.class);
-            intent.putExtra("Titulo", txtTitulo.getText().toString());
-            intent.putExtra("Cidade", txtCidade.getText().toString());
-            intent.putExtra("Valor", txtValor.getText());
-            intent.putExtra("Descricao", txtValor.getText().toString());
+            intent.putExtra("Titulo", anun.getTitulo());
+            intent.putExtra("Cidade", anun.getCidade());
+            intent.putExtra("Valor", anun.getValor());
+            intent.putExtra("Descricao", anun.getDescricao());
             context.startActivity(intent);
         }
     }
