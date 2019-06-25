@@ -35,10 +35,10 @@ public class MainActivity extends AppCompatActivity {
 //        rvAnuncio.setLayoutManager(new LinearLayoutManager(this));
 //    }
     public void atualizarListaAnuncios(){
-
+        obterDBAnuncios();
     }
 
     private void obterDBAnuncios(){
-        db.collection("")
+        db.collection("anuncios")
     }
 }
