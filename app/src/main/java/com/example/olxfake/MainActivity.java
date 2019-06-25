@@ -7,12 +7,14 @@ import android.support.v7.widget.RecyclerView;
 
 import com.example.olxfake.adapters.AnuncioAdapter;
 import com.example.olxfake.modelos.Anuncio;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
     RecyclerView rvAnuncio;
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,13 +25,20 @@ public class MainActivity extends AppCompatActivity {
 
     protected void onResume(){
         super.onResume();
-        obterAnuncios();
+        obterDBAnuncios();
     }
 
-    private void obterAnuncios(){
-        List<Anuncio> anuncios = Anuncio.getAnuncios();
-        AnuncioAdapter adapter = new AnuncioAdapter(anuncios, this);
-        rvAnuncio.setAdapter(adapter);
-        rvAnuncio.setLayoutManager(new LinearLayoutManager(this));
+//    private void obterAnuncios(){
+//        List<Anuncio> anuncios = Anuncio.getAnuncios();
+//        AnuncioAdapter adapter = new AnuncioAdapter(anuncios, this);
+//        rvAnuncio.setAdapter(adapter);
+//        rvAnuncio.setLayoutManager(new LinearLayoutManager(this));
+//    }
+    public void atualizarListaAnuncios(){
+
+    }
+
+    private void obterDBAnuncios(){
+        db.collection("")
     }
 }

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "18605318018",
+    "firebase_url": "https://olxfake-bce75.firebaseio.com",
+    "project_id": "olxfake-bce75",
+    "storage_bucket": "olxfake-bce75.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:18605318018:android:9119cbab33b51c4f",
+        "android_client_info": {
+          "package_name": "com.example.olxfake"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "18605318018-5s2944knve1im78rapii0lhv1ad4dn0h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8nYfXgcZ9Kxq5_dUYR6mkgoIV7bkmP-0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "18605318018-5s2944knve1im78rapii0lhv1ad4dn0h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

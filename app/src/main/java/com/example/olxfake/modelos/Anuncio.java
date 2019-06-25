@@ -10,6 +10,9 @@ public class Anuncio {
     private double valor;
     private String data;
 
+    public Anuncio() {
+    }
+
     public Anuncio(String titulo, String descricao, String cidade, double valor, String data) {
         this.titulo = titulo;
         this.descricao = descricao;
